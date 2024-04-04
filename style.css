@@ -10,7 +10,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px 100px;
+    padding: 30px 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,11 +19,10 @@ header {
 .back{
     background-color: #8BC6EC;
 background-image: linear-gradient(135deg, #8BC6EC 0%, #b4b8f1 100%);
-
 }
 .logo {
     font-size: 2em;
-    color: #555;
+    color: black;
     cursor: default;
 }
 .logo span {
@@ -34,7 +33,7 @@ background-image: linear-gradient(135deg, #8BC6EC 0%, #b4b8f1 100%);
 }
 .navigation a {
     font-size: 1.1em;
-    color: #555;
+    color: black;
     text-decoration: none;
     margin-right: 40px;
     font-weight: 500;
@@ -72,12 +71,33 @@ background-image: linear-gradient(135deg, #8BC6EC 0%, #b4b8f1 100%);
 .bg{
     background-color: #8BC6EC;
 background-image: linear-gradient(135deg, #207ab6 0%, #7b7fce 100%);
+background-repeat: repeat-x;
+}
+.resuspace{
+    background-color: #8BC6EC;
+background-image: linear-gradient(135deg, #207ab6 0%, #7b7fce 100%);
+background-repeat: repeat-x;
+margin-top: 0%;
+margin-bottom: 0%;
+padding-top: 20%;
+padding-bottom: 20%;
+text-align: center;
+}
+.project{
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #207ab6 0%, #7b7fce 100%);
+    background-repeat: repeat-x;
+margin-top: 0%;
+margin-bottom: 0%;
+padding-top: 10%;
+padding-bottom: 10%;
 }
 .txcolor img {
     color: #2363da;
     font-size: small;
  margin: 4px;
  padding: 80px 40px;
+ box-sizing: border-box;
  border-radius: 50px;
  display: block;
  margin-left: auto;
@@ -87,9 +107,9 @@ background-image: linear-gradient(135deg, #207ab6 0%, #7b7fce 100%);
 -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 .content {
-
     max-width: 500px;
     color: #555;
+    text-align: justify;
 }
 .content h2 {
     font-size: 3em;
@@ -160,3 +180,101 @@ background-image: linear-gradient(135deg, #207ab6 0%, #7b7fce 100%);
 -webkit-box-shadow: 10px 10px 19px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 10px 10px 19px 0px rgba(0,0,0,0.75);
 }
+.mp4{
+    align-items: center; 
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+  }
+  .mp4 h2::before{
+      content:"~~~~~";
+  }
+  .mp4 h2::after{
+      content:"~~~~~";
+  }
+  .contact{
+      border-style: solid;
+      width: 300px;
+      padding: 50px;
+    margin: 20px;
+    display: block;
+      margin: 0 auto;
+      padding: 0 auto;
+      margin-left: 35%;
+    margin-top: 15%;
+    margin-bottom: 25%;
+  } 
+  .button {
+    margin: 0 auto;
+    margin-top: 0 auto;
+    padding: 20% 20%; 
+  }
+  .button {
+    position: relative;
+    width: 250px;
+    height: 70px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+    padding: 12px;
+    gap: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .cont{
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #207ab6 0%, #7b7fce 100%);
+    background-repeat: repeat-x;
+    margin-bottom: 0%;
+    color: black;
+    font-size: small;
+ margin: 0px;
+ padding: 80px 40px;
+ box-sizing: border-box;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+  }
+  .button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    left: -4px;
+    top: -1px;
+    margin: auto;
+    width: 128px;
+    height: 48px;
+    border-radius: 10px;
+    background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
+    z-index: -10;
+    pointer-events: none;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .button::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+    transform: translate3d(0, 0, 0) scale(0.95);
+    filter: blur(20px);
+  }
+  
+  .button:hover::after {
+    filter: blur(30px);
+  }
+  
+  .button:hover::before {
+    transform: rotate(-180deg);
+  }
+  
+  .button:active::before {
+    scale: 0.7;
+  }
+ 
