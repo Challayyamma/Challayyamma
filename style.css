@@ -7,7 +7,7 @@
 }
 header {
     position: fixed;
-    top: 0;
+    top: -25px;
     left: 0;
     width: 100%;
     padding: 30px 90px;
@@ -29,7 +29,8 @@ background-image: linear-gradient(135deg, #8BC6EC 0%, #b4b8f1 100%);
     color: #7d2ae8;
 }
 .navigation {
-    margin-left: -300px;
+    margin-left: -200px;
+    justify-content: space-evenly;
 }
 .navigation a {
     font-size: 1.1em;
@@ -51,6 +52,9 @@ background-image: linear-gradient(135deg, #8BC6EC 0%, #b4b8f1 100%);
     border: 2px solid #7d2ae8;
     font-weight: 500;
     transition: .3s;
+    position: relative;
+top: 0px;
+left: -200px;
 }
 .btn-talk:hover {
     color: #7d2ae8;
@@ -105,6 +109,9 @@ padding-bottom: 10%;
  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.size{
+    font-size: small;
 }
 .content {
     max-width: 500px;

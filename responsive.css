@@ -1,13 +1,29 @@
-@media(max-width:1024px){
+@media(max-width:1440px){
 
 }
-@media(max-width:1023px){
+@media(max-width:1024px){
     .navigation {
         margin-left: -00px;
     }
     .content h2 {
         font-size: 2em;
     }
+    .btn-talk{
+        position: relative;
+    top: 0px;
+    left: -25px;
+}
+.content h4 {
+    font-size: 29px;
+}
+.content h2 {
+    font-size: 29px;
+}
+header {
+    position: fixed;
+    top: -65px;
+    left: -49px;
+}
     .img img {
         margin-top: 50%;
         margin-left: 20%;
